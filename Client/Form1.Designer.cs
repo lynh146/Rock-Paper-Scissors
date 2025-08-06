@@ -43,54 +43,62 @@
             // 
             // btnRock
             // 
-            this.btnRock.Location = new System.Drawing.Point(161, 365);
+            this.btnRock.Location = new System.Drawing.Point(143, 292);
+            this.btnRock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRock.Name = "btnRock";
-            this.btnRock.Size = new System.Drawing.Size(113, 56);
+            this.btnRock.Size = new System.Drawing.Size(100, 45);
             this.btnRock.TabIndex = 0;
             this.btnRock.Text = "Rock";
             this.btnRock.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnRock.UseVisualStyleBackColor = true;
+            this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
             // 
             // btnPaper
             // 
-            this.btnPaper.Location = new System.Drawing.Point(370, 365);
+            this.btnPaper.Location = new System.Drawing.Point(329, 292);
+            this.btnPaper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPaper.Name = "btnPaper";
-            this.btnPaper.Size = new System.Drawing.Size(113, 56);
+            this.btnPaper.Size = new System.Drawing.Size(100, 45);
             this.btnPaper.TabIndex = 1;
             this.btnPaper.Text = "Paper";
             this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
             // 
             // btnScissors
             // 
-            this.btnScissors.Location = new System.Drawing.Point(586, 365);
+            this.btnScissors.Location = new System.Drawing.Point(521, 292);
+            this.btnScissors.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnScissors.Name = "btnScissors";
-            this.btnScissors.Size = new System.Drawing.Size(113, 56);
+            this.btnScissors.Size = new System.Drawing.Size(100, 45);
             this.btnScissors.TabIndex = 2;
             this.btnScissors.Text = "Scissors\t";
             this.btnScissors.UseVisualStyleBackColor = true;
+            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(418, 157);
+            this.lblResult.Location = new System.Drawing.Point(372, 126);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 20);
+            this.lblResult.Size = new System.Drawing.Size(0, 16);
             this.lblResult.TabIndex = 3;
             // 
             // picPlayer1
             // 
-            this.picPlayer1.Location = new System.Drawing.Point(352, 12);
+            this.picPlayer1.Location = new System.Drawing.Point(313, 10);
+            this.picPlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPlayer1.Name = "picPlayer1";
-            this.picPlayer1.Size = new System.Drawing.Size(149, 106);
+            this.picPlayer1.Size = new System.Drawing.Size(132, 85);
             this.picPlayer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPlayer1.TabIndex = 4;
             this.picPlayer1.TabStop = false;
             // 
             // picPlayer2
             // 
-            this.picPlayer2.Location = new System.Drawing.Point(352, 219);
+            this.picPlayer2.Location = new System.Drawing.Point(313, 175);
+            this.picPlayer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPlayer2.Name = "picPlayer2";
-            this.picPlayer2.Size = new System.Drawing.Size(149, 98);
+            this.picPlayer2.Size = new System.Drawing.Size(132, 78);
             this.picPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPlayer2.TabIndex = 5;
             this.picPlayer2.TabStop = false;
@@ -98,35 +106,37 @@
             // lblPlayer1Score
             // 
             this.lblPlayer1Score.AutoSize = true;
-            this.lblPlayer1Score.Location = new System.Drawing.Point(157, 157);
+            this.lblPlayer1Score.Location = new System.Drawing.Point(140, 126);
             this.lblPlayer1Score.Name = "lblPlayer1Score";
-            this.lblPlayer1Score.Size = new System.Drawing.Size(82, 20);
+            this.lblPlayer1Score.Size = new System.Drawing.Size(69, 16);
             this.lblPlayer1Score.TabIndex = 6;
             this.lblPlayer1Score.Text = "Player 1: 0";
             // 
             // lblPlayer2Score
             // 
             this.lblPlayer2Score.AutoSize = true;
-            this.lblPlayer2Score.Location = new System.Drawing.Point(617, 157);
+            this.lblPlayer2Score.Location = new System.Drawing.Point(548, 126);
             this.lblPlayer2Score.Name = "lblPlayer2Score";
-            this.lblPlayer2Score.Size = new System.Drawing.Size(82, 20);
+            this.lblPlayer2Score.Size = new System.Drawing.Size(69, 16);
             this.lblPlayer2Score.TabIndex = 7;
             this.lblPlayer2Score.Text = "Player 2: 0";
             // 
             // btnRestart
             // 
-            this.btnRestart.Location = new System.Drawing.Point(22, 12);
+            this.btnRestart.Location = new System.Drawing.Point(20, 10);
+            this.btnRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestart.Name = "btnRestart";
-            this.btnRestart.Size = new System.Drawing.Size(75, 36);
+            this.btnRestart.Size = new System.Drawing.Size(67, 29);
             this.btnRestart.TabIndex = 8;
             this.btnRestart.Text = "Restart";
             this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 450);
+            this.ClientSize = new System.Drawing.Size(764, 360);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblPlayer2Score);
             this.Controls.Add(this.lblPlayer1Score);
@@ -136,6 +146,7 @@
             this.Controls.Add(this.btnScissors);
             this.Controls.Add(this.btnPaper);
             this.Controls.Add(this.btnRock);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer1)).EndInit();
