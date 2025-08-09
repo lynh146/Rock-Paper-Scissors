@@ -50,7 +50,7 @@ namespace Client
             string opponentChoice = parts.Length > 1 ? parts[1] : "";
 
             lblResult.Text = result;
-            //bảo
+            
             // Ảnh Player 1
             if (choice == "Rock") picPlayer1.Image = Properties.Resources.rock;
             if (choice == "Paper") picPlayer1.Image = Properties.Resources.paper;
@@ -83,7 +83,13 @@ namespace Client
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
+            scoreP1 = 0;
+            scoreP2 = 0;
+            lblPlayer1Score.Text = "Player 1: 0";
+            lblPlayer2Score.Text = "Player 2: 0";
 
+            picPlayer1.Image = null;
+            picPlayer2.Image = null;
         }
     }
 
